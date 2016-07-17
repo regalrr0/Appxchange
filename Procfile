@@ -1,1 +1,1 @@
-web: gunicorn Appxchange.wsgi
+web: python src/manage.py runserver 0.0.0.0:8000
