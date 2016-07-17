@@ -22,7 +22,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "{{ secret_key }}"
+SECRET_KEY = "3@e*81!kro)9h50$xsyfv)v!pnb(n0$)cf)kk!0lp$g1icu_$h"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
+WSGI_APPLICATION = 'Appxchange.wsgi.application'
 
 
 # Database
@@ -82,9 +82,12 @@ WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dap9ij4isjhouh',
+        'PASSWORD': 'IG14XYtnwiNzNYa9p8VXmEJA7f',
+        'PORT': '5432',
+        'USER': 'uwktvpanipzjnf'
+        }
 }
 
 AUTH_PASSWORD_VALIDATORS = [
